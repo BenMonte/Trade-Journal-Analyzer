@@ -1,0 +1,31 @@
+# === Java / Maven ===
+target/
+*.class
+*.jar
+*.war
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# === IDE ===
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# === Generated output ===
+output/
+
+# === Data files ===
+*.xlsx
+*.csv
+
+# === Environment / secrets ===
+.env
+.envrc
+
+# === OS ===
+.DS_Store
+Thumbs.db
