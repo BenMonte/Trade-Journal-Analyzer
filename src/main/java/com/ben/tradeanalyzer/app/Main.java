@@ -25,11 +25,34 @@ public class Main {
         double capital = DEFAULT_CAPITAL;
         boolean skipLlm = false;
 
-        // Simple CLI arg parsing
+        // CLI arg parsing
         for (int i = 0; i < args.length; i++) {
             switch (args[i]) {
-                case "--file" -> filePath = args[++i];
-                case "--capital" -> capital = Double.parseDouble(args[++i]);
+                case "--file" -> {
+                    if (i + 1 >= args.length) {
+                        System.err.println("Error: --file requires a value");
+                        printUsage();
+                        System.exit(1);
+                        return;
+                    }
+                    filePath = args[++i];
+                }
+                case "--capital" -> {
+                    if (i + 1 >= args.length) {
+                        System.err.println("Error: --capital requires a value");
+                        printUsage();
+                        System.exit(1);
+                        return;
+                    }
+                    try {
+                        capital = Double.parseDouble(args[++i]);
+                    } catch (NumberFormatException e) {
+                        System.err.println("Error: --capital must be a number");
+                        printUsage();
+                        System.exit(1);
+                        return;
+                    }
+                }
                 case "--skip-llm" -> skipLlm = true;
                 case "--help" -> { printUsage(); return; }
                 default -> {

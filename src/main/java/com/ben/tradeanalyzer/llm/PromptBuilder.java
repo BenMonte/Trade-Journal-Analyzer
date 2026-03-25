@@ -22,6 +22,7 @@ public class PromptBuilder {
                   Total Trades:          %d
                   Win Rate:              %.2f%%
                   Expectancy (R):        %.2f
+                  Average R:             %.2f
                   Avg Win R:             %.2f
                   Avg Loss R:            %.2f
                   Profit Factor:         %.2f
@@ -45,6 +46,7 @@ public class PromptBuilder {
                 s.totalTrades(),
                 s.winRate() * 100,
                 s.expectancyR(),
+                s.averageR(),
                 s.averageWinR(),
                 s.averageLossR(),
                 s.profitFactor(),

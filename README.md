@@ -58,6 +58,7 @@ Built with **Maven**. Requires **Java 17+**.
 ```bash
 mvn compile        # compile only
 mvn test           # compile + run unit tests
+mvn package        # compile + test + build runnable fat JAR
 ```
 
 ## Usage
@@ -74,6 +75,16 @@ mvn exec:java -Dexec.args="--file MyTrades.xlsx --capital 25000"
 
 # Show help
 mvn exec:java -Dexec.args="--help"
+```
+
+### Running as a standalone JAR
+
+After `mvn package`, a fat JAR with all dependencies is produced in `target/`:
+
+```bash
+java -jar target/trade-journal-analyzer-1.0-SNAPSHOT.jar
+java -jar target/trade-journal-analyzer-1.0-SNAPSHOT.jar --file MyTrades.xlsx --capital 25000
+java -jar target/trade-journal-analyzer-1.0-SNAPSHOT.jar --skip-llm
 ```
 
 ### CLI Options

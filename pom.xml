@@ -58,6 +58,27 @@
                 </configuration>
             </plugin>
 
+            <!-- Build fat JAR: mvn package → java -jar target/trade-journal-analyzer-1.0-SNAPSHOT.jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.2</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+
             <!-- Run via: mvn exec:java -Dexec.args="..." -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
