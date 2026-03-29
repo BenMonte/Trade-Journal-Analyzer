@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * Writes the performance summary and optional LLM narrative to a Markdown report.
+ * Writes the performance summary and optional LLM narrative to a Markdown report
  */
 public class MarkdownReportWriter {
 

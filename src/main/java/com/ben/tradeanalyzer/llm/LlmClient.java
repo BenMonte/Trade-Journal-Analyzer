@@ -13,11 +13,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Sends chat completion requests to the OpenAI API.
+ * Sends chat completion requests to the OpenAI API
  */
 public class LlmClient {
 
-    // Change this to switch the default model (e.g. "gpt-4o-mini", "gpt-4.1-nano")
+    // Change this to switch the default model 
     private static final String DEFAULT_MODEL = "gpt-4o";
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
     private static final Duration TIMEOUT = Duration.ofSeconds(30);

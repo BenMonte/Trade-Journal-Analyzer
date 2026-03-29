@@ -6,7 +6,7 @@ import com.ben.tradeanalyzer.model.Trade;
 import java.util.List;
 
 /**
- * Computes performance metrics (win rate, drawdown, etc.) from a list of trades.
+ * Computes performance metrics (win rate, drawdown, etc.) from a list of trades
  */
 public class PerformanceCalculator {
 

@@ -12,7 +12,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 /**
- * Entry point — parses CLI args, loads trades, computes metrics, and generates reports.
+ * Entry point, parses CLI args, loads trades, computes metrics, and generates reports
  */
 public class Main {
 
@@ -83,7 +83,7 @@ public class Main {
 
         printSummary(summary);
 
-        // 3. LLM diagnostics (optional)
+        // 3. LLM diagnostics
         String narrative = null;
         if (!skipLlm) {
             System.out.println("\nGenerating LLM diagnostics...");

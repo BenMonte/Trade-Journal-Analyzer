@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
- * Writes the performance summary to a pretty-printed JSON file.
+ * Writes the performance summary to a pretty-printed JSON file
  */
 public class JsonReportWriter {
 

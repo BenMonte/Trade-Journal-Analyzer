@@ -12,7 +12,7 @@ import java.time.ZoneId;
 import java.util.*;
 
 /**
- * Reads trade records from an .xlsx file using Apache POI.
+ * Reads trade records from an .xlsx file using Apache POI
  */
 public class ExcelTradeReader {
 
@@ -88,7 +88,7 @@ public class ExcelTradeReader {
     }
 
     /**
-     * Parses a single row into a Trade. Returns null if the row is incomplete.
+     * Parses a single row into a Trade. Returns null if the row is incomplete
      */
     private Trade parseRow(Row row, Map<String, Integer> columnIndex, int rowNum) {
         try {

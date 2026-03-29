@@ -20,7 +20,7 @@ class PerformanceCalculatorTest {
     }
 
     /**
-     * Mixed bag: 3 winners, 7 losers — realistic low-win-rate trend-following profile.
+     * 3 winners, 7 losers, realistic low-win-rate trend-following profile
      */
     private static List<Trade> mixedTrades() {
         return List.of(

@@ -1,7 +1,7 @@
 package com.ben.tradeanalyzer.model;
 
 /**
- * Immutable container for all computed performance metrics.
+ * Immutable container for all computed performance metrics
  *
  * @param totalTrades          number of completed trades
  * @param winRate              fraction of trades with positive P&L (0.0–1.0)

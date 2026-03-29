@@ -3,8 +3,8 @@ package com.ben.tradeanalyzer.llm;
 import com.ben.tradeanalyzer.model.PerformanceSummary;
 
 /**
- * Builds the chat prompt sent to the LLM.
- * Only receives pre-computed metrics — never raw trade data.
+ * Builds the chat prompt sent to the LLM
+ * Only receives pre-computed metrics — never raw trade data
  */
 public class PromptBuilder {
 

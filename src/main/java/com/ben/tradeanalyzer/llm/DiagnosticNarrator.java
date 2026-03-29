@@ -3,7 +3,7 @@ package com.ben.tradeanalyzer.llm;
 import com.ben.tradeanalyzer.model.PerformanceSummary;
 
 /**
- * Orchestrates the LLM flow — builds the prompt, calls the API, and handles failures.
+ * Orchestrates the LLM flow, builds the prompt, calls the API, and handles failures
  */
 public class DiagnosticNarrator {
 
